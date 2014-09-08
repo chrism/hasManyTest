@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<ul>
+{{#each file in files}}
+  <li>{{file.name}}</li>
+{{/each}}
+</ul>
+
+<button {{action "createFile"}}>create a new file</button>
